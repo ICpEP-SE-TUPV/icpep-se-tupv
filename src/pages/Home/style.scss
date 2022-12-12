@@ -26,5 +26,5 @@
 }
 
 @media (min-width: map.get($grid-breakpoints, "lg")) {
-  .articles, .socials { padding: 12px 128px; }
+  .articles, .socials { padding: 12px 256px; }
 }
