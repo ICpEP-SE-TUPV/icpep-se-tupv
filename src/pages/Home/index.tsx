@@ -5,11 +5,8 @@ import axios from 'axios';
 import PageTemplate from '../PageTemplate';
 import Article from '../../components/Article';
 import Carousel from '../../components/Carousel';
+import Socials from '../../components/Socials';
 import { IArticle } from '../../types';
-import { ReactComponent as FacebookIcon } from '../../assets/facebook.svg';
-import { ReactComponent as DiscordIcon } from '../../assets/discord.svg';
-import { ReactComponent as GitHubMark } from '../../assets/github.svg';
-import { ReactComponent as EnvelopeIcon } from '../../assets/envelope.svg';
 import './style.scss';
 
 interface HomeProps {}
@@ -69,26 +66,7 @@ class Home extends React.Component<HomeProps, HomeState> {
             </div>
           </div>
 
-          <div className="section pt-4">
-            <h4 className="section-title">SOCIAL MEDIAS</h4>
-            <div className="socials">
-              <a href="https://www.facebook.com/ICpEP.seTUPV" target="_blank" rel="noreferrer">
-                <FacebookIcon width={56} fill="currentColor" />
-              </a>
-
-              <a href="https://discord.gg/9T2aYmM7G4" target="_blank" rel="noreferrer">
-                <DiscordIcon width={56} fill="currentColor" />
-              </a>
-
-              <a href="https://github.com/ICpEP-SE-TUPV" target="_blank" rel="noreferrer">
-                <GitHubMark width={56} fill="currentColor" />
-              </a>
-
-              <a href="mailto:tupv.bscpe@tup.edu.ph">
-                <EnvelopeIcon width={56} fill="currentColor" />
-              </a>
-            </div>
-          </div>
+          <Socials />
         </main>
       </PageTemplate>
     );
