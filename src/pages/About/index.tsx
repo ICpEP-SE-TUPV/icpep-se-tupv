@@ -29,6 +29,8 @@ class About extends React.Component<AboutProps, AboutState> {
   }
 
   async componentDidMount () {
+    document.title = 'ICpEP.SE TUPV | About';
+
     const date = new Date();
     const timestamp = Math.floor(date.getTime() / 1000);
     const adviserRes = await axios.get(`/data/adviser.json?t=${timestamp}`);

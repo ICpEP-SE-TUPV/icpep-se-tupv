@@ -27,6 +27,8 @@ class Home extends React.Component<HomeProps, HomeState> {
   }
 
   async componentDidMount () {
+    document.title = 'ICpEP.SE TUPV';
+
     const articles: IArticle[] = [];
     const allRes = await axios.get('/data/updates.json');
     const all = allRes.data;
