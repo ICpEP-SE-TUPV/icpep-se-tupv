@@ -52,12 +52,18 @@ class Carousel extends React.Component<CarouselProps, CarouselState> {
 
     return (
       <div className="carousel">
-        <LeftIcon width={24} fill="currentColor" onClick={this.prev} />
+        <div className="carousel-prev" onClick={this.prev}>
+          <LeftIcon width={24} fill="currentColor" />
+        </div>
+
         <div className="carousel-bg" style={{ backgroundImage: `url("${images[current]}")` }}></div>
         <div className="carousel-items">
           { items }
         </div>
-        <RightIcon width={24} fill="currentColor" onClick={this.next} />
+
+        <div className="carousel-next" onClick={this.next}>
+          <RightIcon width={24} fill="currentColor" />
+        </div>
       </div>
     );
   }
