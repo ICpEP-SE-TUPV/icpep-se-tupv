@@ -79,3 +79,74 @@ a {
 	.p-#{$i}, .px-#{$i}, .pl-#{$i} { padding-left: $size; }
 	.p-#{$i}, .px-#{$i}, .pr-#{$i} { padding-right: $size; }
 }
+
+.form-group {
+	display: block;
+	margin-top: 1em;
+
+	label {
+		display: block;
+		margin-bottom: 0.5em;
+	}
+
+	.form-control {
+		display: block;
+		width: 100%;
+		padding: .6rem 1rem;
+		background-color: transparent;
+		border-radius: 4px;
+		border: 1px solid $color-primary;
+		color: #fff;
+		font-size: 1em;
+	}
+}
+
+.btn {
+	display: inline-block;
+	padding: .6rem 1rem;
+	text-align: center;
+	vertical-align: middle;
+	background-color: transparent;
+	color: #fff;
+	font-size: 1em;
+	border-radius: 4px;
+	cursor: pointer;
+	user-select: none;
+}
+
+.btn-primary {
+	background-color: $color-primary;
+}
+
+.btn-primary:hover {
+	background-color: darken($color-primary, 10);
+}
+
+.btn-primary:disabled {
+	background-color: lighten($color-primary, 20);
+}
+
+.btn-block {
+	display: block;
+	width: 100%;
+}
+
+.box {
+	display: block;
+	width: 100%;
+	margin-top: 1em;
+	padding: 16px;
+	border-radius: 4px;
+}
+
+.box-danger {
+	color: $color-danger;
+	background-color: $color-danger-bg;
+	border-color: $color-danger-border;
+}
+
+.box-info {
+	color: $color-info;
+	background-color: $color-info-bg;
+	border-color: $color-info-border;
+}

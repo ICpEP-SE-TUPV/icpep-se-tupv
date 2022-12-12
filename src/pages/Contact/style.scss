@@ -1,0 +1,18 @@
+
+@use "sass:map";
+@import "../../styles/variables";
+
+.form-contact {
+  margin: 32px auto 0 auto;
+  max-width: 225px;
+
+  a { text-decoration: underline; }
+}
+
+@media (min-width: map.get($grid-breakpoints, "sm")) {
+  .form-contact { max-width: 350px; }
+}
+
+@media (min-width: map.get($grid-breakpoints, "lg")) {
+  .form-contact { max-width: 450px; }
+}
