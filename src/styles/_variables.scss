@@ -1,0 +1,25 @@
+
+$color-bg: #000000;
+$color-bg-contrast: #ffffff;
+
+$color-primary: #ebc463;
+$color-primary-contrast: #000000;
+
+$spacing-sizes: (
+  0: 0rem,
+  1: 0.25rem,
+  2: 0.5rem,
+  3: 1rem,
+  4: 2rem,
+  5: 4rem,
+  6: 8rem
+);
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);

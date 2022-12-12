@@ -1,4 +1,10 @@
 
+@import "styles/variables";
+
+* {
+	font-family: Roboto, 'Open Sans', sans-serif;
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -16,7 +22,6 @@ time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font: inherit;
 	vertical-align: baseline;
 }
 
@@ -46,4 +51,30 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+
+body {
+	background-color: $color-bg;
+	color: $color-bg-contrast;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+#root {
+	display: contents;
+}
+
+@each $i, $size in $spacing-sizes {
+	.m-#{$i}, .my-#{$i}, .mt-#{$i} { margin-top: $size; }
+	.m-#{$i}, .my-#{$i}, .mb-#{$i} { margin-bottom: $size; }
+	.m-#{$i}, .mx-#{$i}, .ml-#{$i} { margin-left: $size; }
+	.m-#{$i}, .mx-#{$i}, .mr-#{$i} { margin-right: $size; }
+
+	.p-#{$i}, .py-#{$i}, .pt-#{$i} { padding-top: $size; }
+	.p-#{$i}, .py-#{$i}, .pb-#{$i} { padding-bottom: $size; }
+	.p-#{$i}, .px-#{$i}, .pl-#{$i} { padding-left: $size; }
+	.p-#{$i}, .px-#{$i}, .pr-#{$i} { padding-right: $size; }
 }

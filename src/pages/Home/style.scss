@@ -1,0 +1,30 @@
+
+@use "sass:map";
+@import "../../styles/variables";
+
+.articles {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 12px;
+}
+
+.socials {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 1em auto;
+  padding: 12px;
+  max-width: 450px;
+}
+
+@media (min-width: map.get($grid-breakpoints, "sm")) {
+}
+
+@media (min-width: map.get($grid-breakpoints, "md")) {
+  .articles, .socials { padding: 12px 48px; }
+}
+
+@media (min-width: map.get($grid-breakpoints, "lg")) {
+  .articles, .socials { padding: 12px 128px; }
+}

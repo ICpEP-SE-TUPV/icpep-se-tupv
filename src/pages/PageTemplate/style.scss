@@ -1,0 +1,80 @@
+
+@use "sass:map";
+@import "../../styles/variables";
+
+.page-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 8px;
+  color: $color-primary;
+  font-size: .9em;
+
+  span {
+    width: 237px;
+    font-weight: bold;
+    line-height: 1.5;
+  }
+}
+
+.page-header-brand {
+  display: flex;
+  align-items: center;
+}
+
+.page-header-nav {
+  margin-top: 8px;
+}
+
+.page-header-nav-separator {
+  margin: 0 12px;
+}
+
+.page-footer {
+  margin: 5em 0 1em 0;
+  text-align: center;
+}
+
+.section {
+  display: block;
+  margin-top: 2em;
+}
+
+.section-title {
+  display: block;
+  max-width: 225px;
+  margin: auto;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #fff;
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: 400;
+}
+
+.subsection {
+  max-width: 600px;
+  margin: 48px 16px;
+  text-align: justify;
+  font-size: 1.15em;
+  line-height: 1.5;
+}
+
+@media (min-width: map.get($grid-breakpoints, "sm")) {
+  .page-header { flex-direction: row; }
+  .page-header-nav { margin-top: 0; }
+
+  .section-title { max-width: 350px; }
+  .subsection { margin: 48px auto; }
+}
+
+@media (min-width: map.get($grid-breakpoints, "md")) {
+  .page-header { padding: 8px 48px; }
+}
+
+@media (min-width: map.get($grid-breakpoints, "lg")) {
+  .page-header { padding: 8px 128px; }
+
+  .section-title { max-width: 450px; }
+}

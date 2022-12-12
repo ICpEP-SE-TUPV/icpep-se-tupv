@@ -1,0 +1,16 @@
+
+@use "sass:map";
+@import "../../styles/variables";
+
+.people {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0;
+  padding: 12px 48px 0 48px;
+}
+
+@media (min-width: map.get($grid-breakpoints, "md")) {
+  .people { margin: 0 128px; }
+}

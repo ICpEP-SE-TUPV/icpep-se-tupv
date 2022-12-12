@@ -1,0 +1,60 @@
+{
+  "year": "2022 - 2023",
+  "officers": [
+    {
+      "name": "Tan, Adriane Justine",
+      "position": "President",
+      "image": "/android-chrome-192x192.png"
+    },
+    {
+      "name": "Villanueva, Lanz Joseph",
+      "position": "Vice President - External",
+      "image": "/android-chrome-192x192.png"
+    },
+    {
+      "name": "Calimpong, Chrysler Vaughn",
+      "position": "Vice President - Internal",
+      "image": "/android-chrome-192x192.png"
+    },
+    {
+      "name": "Araquil, Patrick",
+      "position": "Vice President - Education",
+      "image": "/android-chrome-192x192.png"
+    },
+    {
+      "name": "Yude, John Nena",
+      "position": "Secretary",
+      "image": "/android-chrome-192x192.png"
+    },
+    {
+      "name": "Caingcoy, Elysia",
+      "position": "Treasurer",
+      "image": "/android-chrome-192x192.png"
+    },
+    {
+      "name": "Kanda, Sherrie Lyn",
+      "position": "Auditor",
+      "image": "/android-chrome-192x192.png"
+    },
+    {
+      "name": "Dello, Ferlin",
+      "position": "PIO",
+      "image": "/android-chrome-192x192.png"
+    },
+    {
+      "name": "Dymosco, Gerome",
+      "position": "PIO",
+      "image": "/android-chrome-192x192.png"
+    },
+    {
+      "name": "Regalado, Elyssa May",
+      "position": "PIO",
+      "image": "/android-chrome-192x192.png"
+    },
+    {
+      "name": "Geagoni, Ptheusen",
+      "position": "PIO",
+      "image": "/android-chrome-192x192.png"
+    }
+  ]
+}
