@@ -70,7 +70,7 @@ class About extends React.Component<AboutProps, AboutState> {
             <h4 className="section-title">ABOUT</h4>
 
             <div className="subsection">
-              <h5>Mission</h5>
+              <h5>Our Mission</h5>
               <p>
                 The Institute of Computer Engineers of the Philippines Student Edition (ICpEP.SE) is
                 committed in bridging the gap between the industry and the academe by empowering the
@@ -81,7 +81,7 @@ class About extends React.Component<AboutProps, AboutState> {
             </div>
 
             <div className="subsection">
-              <h5>Vision</h5>
+              <h5>Our Vision</h5>
               <p>
                 The Institute of Computer Engineers of the Philippines Student Edition (ICpEP.SE)
                 envisions itself as the foundation of world class computer engineers and motivator of
