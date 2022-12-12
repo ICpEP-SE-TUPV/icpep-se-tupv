@@ -38,7 +38,7 @@ class PageTemplate extends React.Component<PageTemplateProps> {
         { this.props.children }
 
         <footer className="page-footer">
-          Copyright &copy; 2022, <a href="https://icpep-se-tupv.pages.dev">ICpEP.SE TUPV</a>
+          Copyright &copy; 2022, <a href={ process.env.PUBLIC_URL }>ICpEP.SE TUPV</a>
         </footer>
       </React.Fragment>
     );
