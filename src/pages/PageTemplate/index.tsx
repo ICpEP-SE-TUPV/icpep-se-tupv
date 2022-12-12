@@ -21,7 +21,7 @@ class PageTemplate extends React.Component<PageTemplateProps> {
         <header className="page-header">
           <div className="page-header-brand">
             <img src={logo} alt="ICpEP.SE TUPV Logo" width={48} height={48} className="mr-2" />
-            <span>Institute of Computer Engineers of the Philippines SE - TUPV Chapter</span>
+            <span>Institute of Computer Engineers of the Philippines SE - TUPV</span>
           </div>
 
           <nav className="page-header-nav">
