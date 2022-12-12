@@ -63,7 +63,7 @@ class Contact extends React.Component<ContactProps, ContactState> {
         <div className="section">
           <h4 className="section-title">Keep in Touch With Us!</h4>
 
-          <form action="https://formspree.io/f/xaykrznj" method="post" className="form-contact px-4" onSubmit={this.handleSubmit}>
+          <form action="https://formspree.io/f/xaykrznj" method="post" className="form-contact" onSubmit={this.handleSubmit}>
             <p>Email: <a href="mailto:tupv.bscpe@tup.edu.ph">tupv.bscpe@tup.edu.ph</a></p>
 
             <div className="form-group">
