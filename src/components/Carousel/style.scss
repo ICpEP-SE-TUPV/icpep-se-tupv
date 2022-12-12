@@ -1,0 +1,63 @@
+
+@use "sass:map";
+@import "../../styles/variables";
+
+.carousel {
+  display: flex;
+  user-select: none;
+
+  svg:first-child {
+    padding-left: 32px;
+    cursor: pointer;
+  }
+
+  svg:last-child {
+    padding-right: 32px;
+    cursor: pointer;
+  }
+
+  .carousel-bg {
+    position: absolute;
+    width: 100%;
+    height: 600px;
+    filter: blur(8px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -100;
+  }
+
+  .carousel-items {
+    display: flex;
+    flex: 1;
+    margin-left: 16px;
+    margin-right: 16px;
+    overflow: hidden;
+
+    .carousel-item {
+      display: none;
+      flex-shrink: 0;
+      width: 100%;
+      height: 600px;
+      text-align: center;
+      overflow: hidden;
+
+      &.active { display: block; }
+      img { max-height: 600px; }
+    }
+  }
+}
+
+@media (min-width: map.get($grid-breakpoints, "md")) {
+  .carousel {
+    svg:first-child { padding-left: 64px; }
+    svg:last-child { padding-right: 64px; }
+  }
+}
+
+@media (min-width: map.get($grid-breakpoints, "lg")) {
+  .carousel {
+    svg:first-child { padding-left: 128px; }
+    svg:last-child { padding-right: 128px; }
+  }
+}
