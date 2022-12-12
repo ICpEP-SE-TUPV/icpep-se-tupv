@@ -57,6 +57,10 @@ class Contact extends React.Component<ContactProps, ContactState> {
     }
   }
 
+  componentDidMount () {
+    document.title = 'ICpEP.SE TUPV | Contact';
+  }
+
   render () {
     return (
       <PageTemplate>
