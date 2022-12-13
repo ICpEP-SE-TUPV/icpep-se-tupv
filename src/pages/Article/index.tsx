@@ -6,6 +6,7 @@ import axios from 'axios';
 
 import { IArticle } from '../../types';
 import PageTemplate from '../PageTemplate';
+import Loader from '../../components/Loader';
 import './style.scss';
 
 interface ArticleWrapperProps {}
@@ -48,7 +49,7 @@ class Article extends React.Component<ArticleProps, ArticleState> {
     const images: React.ReactNode[] = [];
     const article = this.state.article;
     const markdown = this.state.markdown;
-    if (article === null) return <React.Fragment />;
+    if (!article) return <Loader />;
 
     const widthPercentage = 100 / article.images.length;
     const imageStyle = { maxWidth: `calc(${widthPercentage}% - 16px)` };

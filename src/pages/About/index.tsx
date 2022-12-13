@@ -4,6 +4,7 @@ import axios from 'axios';
 
 import PageTemplate from '../PageTemplate';
 import Officer from '../../components/Officer';
+import Loader from '../../components/Loader';
 import { IOfficer } from '../../types';
 import './style.scss';
 
@@ -94,17 +95,17 @@ class About extends React.Component<AboutProps, AboutState> {
           <div className="section pt-5">
             <h4 className="section-title">Officers of Academic Year { this.state.year }</h4>
             <div className="people">
-              { adviser && <Officer officer={adviser} /> }
+              { adviser ? <Officer officer={adviser} /> : <Loader /> }
             </div>
 
             <div className="people">
-              { officers }
+              { officers.length > 0 ? officers : <Loader /> }
             </div>
           </div>
 
           <div className="section pt-5">
             <h4 className="section-title">Website Development</h4>
-            <div className="people">{ development }</div>
+            <div className="people">{ development.length ? development : <Loader /> }</div>
           </div>
         </main>
       </PageTemplate>
