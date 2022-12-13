@@ -1,11 +1,13 @@
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 import axios from 'axios';
 
 import PageTemplate from '../PageTemplate';
 import Article from '../../components/Article';
 import Carousel from '../../components/Carousel';
 import Socials from '../../components/Socials';
+import { ReactComponent as ArrowRightIcon } from '../../assets/arrow-right.svg';
 import { IArticle } from '../../types';
 import './style.scss';
 
@@ -63,6 +65,13 @@ class Home extends React.Component<HomeProps, HomeState> {
             <h4 className="section-title">UPDATES</h4>
             <div className="articles">
               { articles }
+            </div>
+
+            <div className="section-more mt-2">
+              <Link to="/articles">
+                <ArrowRightIcon width={32} fill="currentColor" className="mr-2" />
+                <span>Read More</span>
+              </Link>
             </div>
           </div>
 
