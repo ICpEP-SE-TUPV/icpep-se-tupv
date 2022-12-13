@@ -31,8 +31,8 @@ class Article extends React.Component<ArticleProps> {
   render () {
     const article = this.props.article;
     return (
-      <div className="update" onClick={this.redirect}>
-        <div className="update-img">
+      <div className="article" onClick={this.redirect}>
+        <div className="article-img">
           <img src={article.images[0]} alt={article.title} width={350} />
         </div>
         <h6>{ article.title }</h6>
@@ -41,7 +41,7 @@ class Article extends React.Component<ArticleProps> {
   }
 }
 
-export default function UpdateWrapper (props: ArticleWrapperProps) {
+export default function ArticleWrapper (props: ArticleWrapperProps) {
   const navigate = useNavigate();
   return <Article {...props} navigate={navigate} />;
 }
