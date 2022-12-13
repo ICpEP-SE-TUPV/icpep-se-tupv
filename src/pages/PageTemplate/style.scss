@@ -53,6 +53,10 @@
   font-weight: 400;
 }
 
+.section-title-long {
+  max-width: 400px;
+}
+
 .section-subtitle {
   margin-top: 24px;
   text-align: center;
@@ -71,6 +75,7 @@
   .page-header-nav { margin-top: 0; }
 
   .section-title { max-width: 350px; }
+  .section-title-long { max-width: 500px; }
   .subsection { margin: 48px auto; }
 }
 
@@ -82,4 +87,5 @@
   .page-header { padding: 8px 128px; }
 
   .section-title { max-width: 450px; }
+  .section-title-long { max-width: 600px; }
 }
