@@ -1,8 +1,7 @@
 
 ### Wires up, Computer Engineers!
 
-Get excited as we formally introduce to you the aspiring contestants of Technological University of the Philippines - Visayas,
-for the  ICpEP - Region 6 CpE Challenge 2022 BREADBOARDING COMPETITION.
+Get excited as we formally introduce to you the aspiring contestants of Technological University of the Philippines - Visayas, for the  ICpEP - Region 6 CpE Challenge 2022 BREADBOARDING COMPETITION.
 
 The event will take place at the University of St. La Salle Bacolod, on December 10, 2022, at 1:00 P.M.
 
