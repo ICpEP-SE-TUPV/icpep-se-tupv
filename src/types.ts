@@ -3,6 +3,7 @@ export interface IArticle {
   title: string;
   images: string[];
   description: string;
+  date: string;
   slug: string;
 }
 
