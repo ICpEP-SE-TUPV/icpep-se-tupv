@@ -7,17 +7,11 @@ import { ReactComponent as GitHubMark } from '../../assets/github.svg';
 import { ReactComponent as EnvelopeIcon } from '../../assets/envelope.svg';
 import './style.scss';
 
-interface SocialsProps {
-  message?: string;
-}
-
-class Socials extends React.Component<SocialsProps> {
+class Socials extends React.Component {
   render () {
     return (
       <div className="section pt-4">
         <h4 className="section-title">SOCIAL MEDIAS</h4>
-        { this.props.message && <p className="section-subtitle">{ this.props.message }</p> }
-
         <div className="socials">
           <a href="https://www.facebook.com/ICpEP.seTUPV" target="_blank" rel="noreferrer">
             <FacebookIcon width={56} fill="currentColor" />

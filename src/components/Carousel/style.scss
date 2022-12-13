@@ -2,61 +2,99 @@
 @use "sass:map";
 @import "../../styles/variables";
 
+.carousel-bg {
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  filter: blur(8px);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: -100;
+}
+
 .carousel {
   display: flex;
   user-select: none;
 
   .carousel-prev,
   .carousel-next {
-    display: flex;
+    display: none;
     cursor: pointer;
   }
 
   .carousel-prev { padding-left: 24px; }
   .carousel-next { padding-right: 24px; }
 
-  .carousel-bg {
-    position: absolute;
-    width: 100%;
-    height: 600px;
-    filter: blur(8px);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    z-index: -100;
-  }
-
   .carousel-items {
     display: flex;
     flex: 1;
-    margin-left: 16px;
-    margin-right: 16px;
+    justify-content: center;
+    margin-left: 0;
+    margin-right: 0;
     overflow: hidden;
 
     .carousel-item {
       display: none;
       flex-shrink: 0;
-      width: 100%;
-      height: 600px;
+      height: 300px;
       text-align: center;
       overflow: hidden;
 
       &.active { display: block; }
-      img { max-height: 600px; }
+      img { height: 300px; }
     }
   }
 }
 
 @media (min-width: map.get($grid-breakpoints, "sm")) {
+  .carousel-bg { height: 300px }
+  .carousel {
+    .carousel-prev, .carousel-next { display: flex; }
+    .carousel-prev { padding-left: 32px; }
+    .carousel-next { padding-right: 32px; }
+
+    .carousel-items {
+      margin-left: 16px;
+      margin-right: 16px;
+
+      .carousel-item {
+        height: 300px;
+
+        img { height: 300px; }
+      }
+    }
+  }
+}
+
+@media (min-width: map.get($grid-breakpoints, "md")) {
+  .carousel-bg { height: 450px }
   .carousel {
     .carousel-prev { padding-left: 64px; }
     .carousel-next { padding-right: 64px; }
+
+    .carousel-items {
+      .carousel-item {
+        height: 450px;
+
+        img { height: 450px; }
+      }
+    }
   }
 }
 
 @media (min-width: map.get($grid-breakpoints, "lg")) {
+  .carousel-bg { height: 600px }
   .carousel {
     .carousel-prev { padding-left: 128px; }
     .carousel-next { padding-right: 128px; }
+
+    .carousel-items {
+      .carousel-item {
+        height: 600px;
+
+        img { height: 600px; }
+      }
+    }
   }
 }

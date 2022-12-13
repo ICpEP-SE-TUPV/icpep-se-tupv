@@ -101,7 +101,7 @@ class Contact extends React.Component<ContactProps, ContactState> {
           </form>
         </div>
 
-        <Socials message="You can also contact us through our social media accounts" />
+        <Socials />
       </PageTemplate>
     );
   }

@@ -51,11 +51,13 @@ class Article extends React.Component<ArticleProps, ArticleState> {
     const markdown = this.state.markdown;
     if (!article) return <Loader />;
 
-    const widthPercentage = 100 / article.images.length;
-    const imageStyle = { maxWidth: `calc(${widthPercentage}% - 16px)` };
     for (let i = 0; i < article.images.length; i++) {
       const image = article.images[i];
-      images.push(<img src={image} alt={`${article.title} #${i}`} style={imageStyle} key={i} />);
+      images.push(
+        <div key={i}>
+          <img src={image} alt={`${article.title} #${i}`} />
+        </div>
+      );
     }
 
     const dateObj = new Date(article.date);

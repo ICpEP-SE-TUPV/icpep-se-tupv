@@ -1,5 +1,8 @@
 
-.update {
+@use "sass:map";
+@import "../../styles/variables";
+
+.article {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -9,11 +12,20 @@
   line-height: 1.25;
   cursor: pointer;
 
-  .update-img {
-    height: 250px;
+  .article-img {
     max-height: 250px;
     overflow: hidden;
+
+    img { width: 300px; }
   }
 
   h6 { margin-top: 12px; }
+}
+
+@media (min-width: map.get($grid-breakpoints, "sm")) {
+  .article {
+    .article-img {
+      img { width: 350px; }
+    }
+  }
 }

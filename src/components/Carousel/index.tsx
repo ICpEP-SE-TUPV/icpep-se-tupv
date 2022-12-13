@@ -45,26 +45,29 @@ class Carousel extends React.Component<CarouselProps, CarouselState> {
       const image = images[i];
       items.push(
         <div className={`carousel-item ${current === i ? 'active' : ''}`} key={i}>
-          <img src={image} alt={`Carousel Item #${i + 1}`} height={600} />
+          <img src={image} alt={`Carousel Item #${i + 1}`} />
         </div>
       );
     }
 
     return (
-      <div className="carousel">
-        <div className="carousel-prev" onClick={this.prev}>
-          <LeftIcon width={24} fill="currentColor" />
-        </div>
-
+      <React.Fragment>
         <div className="carousel-bg" style={{ backgroundImage: `url("${images[current]}")` }}></div>
-        <div className="carousel-items">
-          { items }
-        </div>
+        <div className="carousel">
+          <div className="carousel-prev" onClick={this.prev}>
+            <LeftIcon width={24} fill="currentColor" />
+          </div>
 
-        <div className="carousel-next" onClick={this.next}>
-          <RightIcon width={24} fill="currentColor" />
+          {/* <div className="carousel-bg"></div> */}
+          <div className="carousel-items">
+            { items }
+          </div>
+
+          <div className="carousel-next" onClick={this.next}>
+            <RightIcon width={24} fill="currentColor" />
+          </div>
         </div>
-      </div>
+      </React.Fragment>
     );
   }
 }
