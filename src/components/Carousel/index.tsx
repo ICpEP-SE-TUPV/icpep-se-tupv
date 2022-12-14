@@ -44,7 +44,6 @@ class Carousel extends React.Component<CarouselProps, CarouselState> {
   }
 
   touchStart (event: React.TouchEvent) {
-    console.log(event);
     this.setState({
       start: event.targetTouches[0].clientX,
       end: null
@@ -52,14 +51,12 @@ class Carousel extends React.Component<CarouselProps, CarouselState> {
   }
 
   touchMove (event: React.TouchEvent) {
-    console.log(event);
     this.setState({
       end: event.targetTouches[0].clientX
     });
   }
 
   touchEnd (event: React.TouchEvent) {
-    console.log(event);
     const state = this.state;
     if (!state.start || !state.end) return;
 
