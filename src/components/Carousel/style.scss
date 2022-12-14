@@ -42,7 +42,12 @@
       overflow: hidden;
 
       &.active { display: block; }
-      img { height: 300px; }
+
+      img {
+        height: 300px;
+        user-select: none;
+        -webkit-user-drag: none;
+      }
     }
   }
 }

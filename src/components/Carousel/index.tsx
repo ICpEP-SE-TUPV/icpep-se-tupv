@@ -11,6 +11,8 @@ interface CarouselProps {
 
 interface CarouselState {
   current: number;
+  start: number | null;
+  end: number | null;
 }
 
 class Carousel extends React.Component<CarouselProps, CarouselState> {
@@ -18,22 +20,52 @@ class Carousel extends React.Component<CarouselProps, CarouselState> {
     super(props);
 
     this.state = {
-      current: 0
+      current: 0,
+      start: null,
+      end: null
     };
 
     this.prev = this.prev.bind(this);
     this.next = this.next.bind(this);
+    this.touchStart = this.touchStart.bind(this);
+    this.touchMove = this.touchMove.bind(this);
+    this.touchEnd = this.touchEnd.bind(this);
   }
 
-  prev (event: React.MouseEvent) {
+  prev () {
     const current = this.state.current;
     if (current > 0) this.setState({ current: current - 1 });
   }
 
-  next (event: React.MouseEvent) {
+  next () {
     const current = this.state.current;
     const max = this.props.images.length;
     if (current < max - 1) this.setState({ current: current + 1 });
+  }
+
+  touchStart (event: React.TouchEvent) {
+    console.log(event);
+    this.setState({
+      start: event.targetTouches[0].clientX,
+      end: null
+    });
+  }
+
+  touchMove (event: React.TouchEvent) {
+    console.log(event);
+    this.setState({
+      end: event.targetTouches[0].clientX
+    });
+  }
+
+  touchEnd (event: React.TouchEvent) {
+    console.log(event);
+    const state = this.state;
+    if (!state.start || !state.end) return;
+
+    const distance = state.start - state.end;
+    if (distance > 50) this.next();
+    if (distance < -50) this.prev();
   }
 
   render () {
@@ -58,8 +90,7 @@ class Carousel extends React.Component<CarouselProps, CarouselState> {
             <LeftIcon width={24} fill="currentColor" />
           </div>
 
-          {/* <div className="carousel-bg"></div> */}
-          <div className="carousel-items">
+          <div className="carousel-items" onTouchStart={this.touchStart} onTouchMove={this.touchMove} onTouchEnd={this.touchEnd}>
             { items }
           </div>
 
