@@ -29,7 +29,7 @@ class PageTemplate extends React.Component<PageTemplateProps> {
             <span className="page-header-nav-separator">|</span>
             <Link to="/about" className="page-header-link">About</Link>
             <span className="page-header-nav-separator">|</span>
-            <Link to="/blog" className="page-header-link">Blog</Link>
+            <Link to="/articles" className="page-header-link">Blog</Link>
             <span className="page-header-nav-separator">|</span>
             <Link to="/contact" className="page-header-link">Contact</Link>
           </nav>

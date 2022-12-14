@@ -1,13 +1,14 @@
 
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
-import { NavigateFunction } from 'react-router-dom';
+import { useNavigate, NavigateFunction } from 'react-router-dom';
+import MarkdownView from 'react-showdown';
 
 import { IArticle } from '../../types';
 import './style.scss';
 
 interface ArticleWrapperProps {
   article: IArticle;
+  detail?: string;
 }
 
 interface ArticleProps extends ArticleWrapperProps {
@@ -30,12 +31,20 @@ class Article extends React.Component<ArticleProps> {
 
   render () {
     const article = this.props.article;
+    const detail = this.props.detail;
+
     return (
-      <div className="article" onClick={this.redirect}>
+      <div className={`article ${detail ? 'article-detailed' : ''}`} onClick={this.redirect}>
         <div className="article-img">
           <img src={article.images[0]} alt={article.title} width={350} />
         </div>
-        <h6>{ article.title }</h6>
+
+        <div className="article-details">
+          <h6>{ article.title }</h6>
+          { detail &&
+            <MarkdownView markdown={detail} className="article-view" />
+          }
+        </div>
       </div>
     );
   }

@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Article from './pages/Article';
+import Articles from './pages/Articles';
 
 class App extends React.Component {
   render () {
@@ -15,6 +16,7 @@ class App extends React.Component {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/article/:year/:slug" element={<Article />} />
+        <Route path="/articles" element={<Articles />} />
       </Routes>
     );
   }

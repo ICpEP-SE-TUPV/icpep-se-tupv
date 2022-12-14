@@ -1,0 +1,46 @@
+
+@use "sass:map";
+@import "../../styles/variables";
+
+.articles-main {
+  padding: 32px 16px;
+
+  .articles-list {
+    .article {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  .articles-years {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    text-align: center;
+    padding: 24px 0;
+    font-weight: 700;
+    font-size: 1.15em;
+
+    div { cursor: pointer; }
+  }
+}
+
+@media (min-width: map.get($grid-breakpoints, "md")) {
+  .articles-main {
+    padding: 32px 48px;
+
+    .articles-list {
+      width: 75%;
+    }
+
+    .articles-years {
+      text-align: left;
+      position: fixed;
+      left: 75%;
+    }
+  }
+}
+
+@media (min-width: map.get($grid-breakpoints, "lg")) {
+  .articles-main { padding: 32px 128px; }
+}
