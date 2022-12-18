@@ -8,12 +8,12 @@
   justify-content: space-between;
   flex-wrap: wrap;
   flex-direction: column;
-  padding: 8px;
+  padding: 16px;
   color: $color-primary;
   font-size: .9em;
 
   span {
-    width: 237px;
+    width: 374px;
     font-weight: bold;
     line-height: 1.5;
   }
@@ -22,10 +22,12 @@
 .page-header-brand {
   display: flex;
   align-items: center;
+  font-size: 1.5em;
 }
 
 .page-header-nav {
   margin-top: 8px;
+  font-size: 1.5em;
 }
 
 .page-header-nav-separator {
@@ -91,13 +93,10 @@
 }
 
 @media (min-width: map.get($grid-breakpoints, "md")) {
-  .page-header { padding: 8px 48px; }
   .section-more { padding: 0 48px; }
 }
 
 @media (min-width: map.get($grid-breakpoints, "lg")) {
-  .page-header { padding: 8px 128px; }
-
   .section-title { max-width: 450px; }
   .section-title-long { max-width: 600px; }
   .section-more { padding: 0 256px; }
