@@ -1,12 +1,6 @@
 
 @import "styles/variables";
 
-@font-face {
-	font-family: "Cornerstone";
-	font-style: normal;
-	src: url("./assets/Cornerstone.ttf") format("truetype");
-}
-
 * {
 	box-sizing: border-box;
 	font-family: Cornerstone, Roboto, sans-serif;
