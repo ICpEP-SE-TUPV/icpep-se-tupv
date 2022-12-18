@@ -20,18 +20,18 @@ class PageTemplate extends React.Component<PageTemplateProps> {
       <React.Fragment>
         <header className="page-header">
           <div className="page-header-brand">
-            <img src={logo} alt="ICpEP.SE TUPV Logo" width={48} height={48} className="mr-2" />
+            <img src={logo} alt="ICpEP.SE TUPV Logo" width={64} height={64} className="mr-3" />
             <span>Institute of Computer Engineers of the Philippines SE - TUPV</span>
           </div>
 
           <nav className="page-header-nav">
-            <Link to="/" className="page-header-link">Home</Link>
+            <Link to="/" className="page-header-link">HOME</Link>
             <span className="page-header-nav-separator">|</span>
-            <Link to="/about" className="page-header-link">About</Link>
+            <Link to="/about" className="page-header-link">ABOUT</Link>
             <span className="page-header-nav-separator">|</span>
-            <Link to="/articles" className="page-header-link">Blog</Link>
+            <Link to="/articles" className="page-header-link">BLOG</Link>
             <span className="page-header-nav-separator">|</span>
-            <Link to="/contact" className="page-header-link">Contact</Link>
+            <Link to="/contact" className="page-header-link">CONTACT</Link>
           </nav>
         </header>
 
