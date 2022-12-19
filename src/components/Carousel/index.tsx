@@ -12,7 +12,7 @@ interface CarouselProps {
 
 interface CarouselState {
   current: number;
-  animation: boolean;
+  animation: string | null;
   start: number | null;
   end: number | null;
 }
@@ -23,7 +23,7 @@ class Carousel extends React.Component<CarouselProps, CarouselState> {
 
     this.state = {
       current: 0,
-      animation: false,
+      animation: null,
       start: null,
       end: null
     };
@@ -59,7 +59,7 @@ class Carousel extends React.Component<CarouselProps, CarouselState> {
       const max = this.props.images.length;
       if (current !== index && index > -1 && current < max) {
         this.setState({
-          animation: true,
+          animation: current > index ? 'prev' : 'next',
           current: index
         });
       }
@@ -98,7 +98,7 @@ class Carousel extends React.Component<CarouselProps, CarouselState> {
     for (let i = 0; i < images.length; i++) {
       const image = images[i];
       items.push(
-        <div className={`carousel-item ${current === i ? 'active' : ''} ${anim ? '' : 'no-anim'}`} key={i}>
+        <div className={`carousel-item ${current === i ? 'active' : ''} ${anim !== null ? `anim-${anim}` : ''}`} key={i}>
           <img src={image} alt={`Carousel Item #${i + 1}`} />
         </div>
       );

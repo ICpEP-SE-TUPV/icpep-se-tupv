@@ -48,12 +48,15 @@
       height: 300px;
       text-align: center;
       overflow: hidden;
-      margin-left: 100vw;
-      animation: slide .25s forwards;
 
-      &.no-anim { 
-        margin-left: 0;
-        animation: none !important;
+      &.anim-prev {
+        margin-right: 100vw;
+        animation: slide .25s forwards;
+      }
+
+      &.anim-next {
+        margin-left: 100vw;
+        animation: slide .25s forwards;
       }
 
       &.active { display: block; }
@@ -81,6 +84,7 @@
 @keyframes slide {
   100% {
     margin-left: 0;
+    margin-right: 0;
   }
 }
 
