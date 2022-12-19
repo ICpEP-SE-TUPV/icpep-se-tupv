@@ -122,9 +122,6 @@
 @media (min-width: map.get($grid-breakpoints, "lg")) {
   .carousel-bg { height: 600px }
   .carousel {
-    .carousel-prev { padding-left: 128px; }
-    .carousel-next { padding-right: 128px; }
-
     .carousel-items {
       .carousel-item {
         height: 600px;
