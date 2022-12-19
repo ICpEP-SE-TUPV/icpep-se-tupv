@@ -16,6 +16,7 @@
 .carousel {
   display: flex;
   user-select: none;
+  overflow: hidden;
 
   .carousel-prev,
   .carousel-next {
@@ -26,9 +27,16 @@
   .carousel-prev { padding-left: 24px; }
   .carousel-next { padding-right: 24px; }
 
+  .carousel-items-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    position: relative;
+  }
+
   .carousel-items {
     display: flex;
-    flex: 1;
     justify-content: center;
     margin-left: 0;
     margin-right: 0;
@@ -41,14 +49,42 @@
       text-align: center;
       overflow: hidden;
 
+      &.anim-prev {
+        margin-right: 100vw;
+        animation: slide .25s forwards;
+      }
+
+      &.anim-next {
+        margin-left: 100vw;
+        animation: slide .25s forwards;
+      }
+
       &.active { display: block; }
 
       img {
+        width: 100%;
         height: 300px;
         user-select: none;
         -webkit-user-drag: none;
       }
     }
+  }
+
+  .carousel-circles {
+    position: absolute;
+    bottom: 24px;
+
+    svg {
+      cursor: pointer;
+      &.active { fill: #fff; }
+    }
+  }
+}
+
+@keyframes slide {
+  100% {
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
@@ -91,9 +127,6 @@
 @media (min-width: map.get($grid-breakpoints, "lg")) {
   .carousel-bg { height: 600px }
   .carousel {
-    .carousel-prev { padding-left: 128px; }
-    .carousel-next { padding-right: 128px; }
-
     .carousel-items {
       .carousel-item {
         height: 600px;

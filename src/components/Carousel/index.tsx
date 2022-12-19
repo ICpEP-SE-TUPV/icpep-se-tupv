@@ -3,6 +3,7 @@ import React from 'react';
 
 import { ReactComponent as LeftIcon } from '../../assets/left.svg';
 import { ReactComponent as RightIcon } from '../../assets/right.svg';
+import { ReactComponent as CircleIcon } from '../../assets/circle.svg';
 import './style.scss';
 
 interface CarouselProps {
@@ -11,6 +12,7 @@ interface CarouselProps {
 
 interface CarouselState {
   current: number;
+  animation: string | null;
   start: number | null;
   end: number | null;
 }
@@ -21,12 +23,14 @@ class Carousel extends React.Component<CarouselProps, CarouselState> {
 
     this.state = {
       current: 0,
+      animation: null,
       start: null,
       end: null
     };
 
     this.prev = this.prev.bind(this);
     this.next = this.next.bind(this);
+    this.nav = this.nav.bind(this);
     this.touchStart = this.touchStart.bind(this);
     this.touchMove = this.touchMove.bind(this);
     this.touchEnd = this.touchEnd.bind(this);
@@ -34,13 +38,32 @@ class Carousel extends React.Component<CarouselProps, CarouselState> {
 
   prev () {
     const current = this.state.current;
-    if (current > 0) this.setState({ current: current - 1 });
+    if (current > 0) {
+      const fn = this.nav(current - 1);
+      fn();
+    }
   }
 
   next () {
     const current = this.state.current;
     const max = this.props.images.length;
-    if (current < max - 1) this.setState({ current: current + 1 });
+    if (current < max - 1) {
+      const fn = this.nav(current + 1);
+      fn();
+    }
+  }
+
+  nav (index: number) {
+    return () => {
+      const current = this.state.current;
+      const max = this.props.images.length;
+      if (current !== index && index > -1 && current < max) {
+        this.setState({
+          animation: current > index ? 'prev' : 'next',
+          current: index
+        });
+      }
+    }
   }
 
   touchStart (event: React.TouchEvent) {
@@ -68,14 +91,20 @@ class Carousel extends React.Component<CarouselProps, CarouselState> {
   render () {
     const images = this.props.images;
     const current = this.state.current;
+    const anim = this.state.animation;
     const items: React.ReactNode[] = [];
+    const circles: React.ReactNode[] = [];
 
     for (let i = 0; i < images.length; i++) {
       const image = images[i];
       items.push(
-        <div className={`carousel-item ${current === i ? 'active' : ''}`} key={i}>
+        <div className={`carousel-item ${current === i ? 'active' : ''} ${anim !== null ? `anim-${anim}` : ''}`} key={i}>
           <img src={image} alt={`Carousel Item #${i + 1}`} />
         </div>
+      );
+
+      circles.push(
+        <CircleIcon width={12} height={12} className={`mx-2 ${current === i ? 'active' : ''}`} onClick={this.nav(i)} key={i} />
       );
     }
 
@@ -87,8 +116,14 @@ class Carousel extends React.Component<CarouselProps, CarouselState> {
             <LeftIcon width={24} fill="currentColor" />
           </div>
 
-          <div className="carousel-items" onTouchStart={this.touchStart} onTouchMove={this.touchMove} onTouchEnd={this.touchEnd}>
-            { items }
+          <div className="carousel-items-container">
+            <div className="carousel-items" onTouchStart={this.touchStart} onTouchMove={this.touchMove} onTouchEnd={this.touchEnd}>
+              { items }
+            </div>
+
+            <div className="carousel-circles">
+              { circles }
+            </div>
           </div>
 
           <div className="carousel-next" onClick={this.next}>
