@@ -16,6 +16,7 @@
 .carousel {
   display: flex;
   user-select: none;
+  overflow: hidden;
 
   .carousel-prev,
   .carousel-next {
@@ -47,6 +48,13 @@
       height: 300px;
       text-align: center;
       overflow: hidden;
+      margin-left: 100vw;
+      animation: slide .25s forwards;
+
+      &.no-anim { 
+        margin-left: 0;
+        animation: none !important;
+      }
 
       &.active { display: block; }
 
@@ -66,6 +74,12 @@
       cursor: pointer;
       &.active { fill: #fff; }
     }
+  }
+}
+
+@keyframes slide {
+  100% {
+    margin-left: 0;
   }
 }
 

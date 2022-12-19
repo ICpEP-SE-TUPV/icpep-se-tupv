@@ -12,6 +12,7 @@ interface CarouselProps {
 
 interface CarouselState {
   current: number;
+  animation: boolean;
   start: number | null;
   end: number | null;
 }
@@ -22,6 +23,7 @@ class Carousel extends React.Component<CarouselProps, CarouselState> {
 
     this.state = {
       current: 0,
+      animation: false,
       start: null,
       end: null
     };
@@ -36,20 +38,31 @@ class Carousel extends React.Component<CarouselProps, CarouselState> {
 
   prev () {
     const current = this.state.current;
-    if (current > 0) this.setState({ current: current - 1 });
+    if (current > 0) {
+      const fn = this.nav(current - 1);
+      fn();
+    }
   }
 
   next () {
     const current = this.state.current;
     const max = this.props.images.length;
-    if (current < max - 1) this.setState({ current: current + 1 });
+    if (current < max - 1) {
+      const fn = this.nav(current + 1);
+      fn();
+    }
   }
 
   nav (index: number) {
     return () => {
       const current = this.state.current;
       const max = this.props.images.length;
-      if (current !== index && index > -1 && current < max) this.setState({ current: index });
+      if (current !== index && index > -1 && current < max) {
+        this.setState({
+          animation: true,
+          current: index
+        });
+      }
     }
   }
 
@@ -78,13 +91,14 @@ class Carousel extends React.Component<CarouselProps, CarouselState> {
   render () {
     const images = this.props.images;
     const current = this.state.current;
+    const anim = this.state.animation;
     const items: React.ReactNode[] = [];
     const circles: React.ReactNode[] = [];
 
     for (let i = 0; i < images.length; i++) {
       const image = images[i];
       items.push(
-        <div className={`carousel-item ${current === i ? 'active' : ''}`} key={i}>
+        <div className={`carousel-item ${current === i ? 'active' : ''} ${anim ? '' : 'no-anim'}`} key={i}>
           <img src={image} alt={`Carousel Item #${i + 1}`} />
         </div>
       );
