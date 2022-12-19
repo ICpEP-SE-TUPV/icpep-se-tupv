@@ -26,7 +26,6 @@
   max-height: 250px;
   overflow: hidden;
   white-space: pre-wrap;
-  text-align: left;
 
   .article-view * {
     display: none;
@@ -36,6 +35,7 @@
 
 .article-detailed {
   align-items: flex-start;
+  text-align: left;
 
   .article-img { margin-right: 32px; }
   h6 { margin-top: 12px; }
