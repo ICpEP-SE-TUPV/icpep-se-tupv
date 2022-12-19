@@ -26,9 +26,16 @@
   .carousel-prev { padding-left: 24px; }
   .carousel-next { padding-right: 24px; }
 
+  .carousel-items-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    position: relative;
+  }
+
   .carousel-items {
     display: flex;
-    flex: 1;
     justify-content: center;
     margin-left: 0;
     margin-right: 0;
@@ -48,6 +55,16 @@
         user-select: none;
         -webkit-user-drag: none;
       }
+    }
+  }
+
+  .carousel-circles {
+    position: absolute;
+    bottom: 24px;
+
+    svg {
+      cursor: pointer;
+      &.active { fill: #fff; }
     }
   }
 }
