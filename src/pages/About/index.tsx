@@ -103,7 +103,7 @@ class About extends React.Component<AboutProps, AboutState> {
             </div>
           </div>
 
-          <div className="section pt-5">
+          <div className="section py-5">
             <h4 className="section-title">Website Development</h4>
             <div className="people">{ development.length ? development : <Loader /> }</div>
           </div>

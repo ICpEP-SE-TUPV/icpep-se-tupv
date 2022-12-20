@@ -66,7 +66,7 @@ class Article extends React.Component<ArticleProps, ArticleState> {
     return (
       <PageTemplate>
         <main>
-          <div className="section">
+          <div className="section pb-5">
             <h4 className="section-title section-title-long">{ article.title }</h4>
 
             <div className="article-images">{ images }</div>

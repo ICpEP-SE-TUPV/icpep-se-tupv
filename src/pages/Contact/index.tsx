@@ -101,7 +101,9 @@ class Contact extends React.Component<ContactProps, ContactState> {
           </form>
         </div>
 
-        <Socials />
+        <div className="mb-5">
+          <Socials />
+        </div>
       </PageTemplate>
     );
   }

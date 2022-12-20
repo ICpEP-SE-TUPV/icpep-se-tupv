@@ -10,7 +10,7 @@ import './style.scss';
 class Socials extends React.Component {
   render () {
     return (
-      <div className="section pt-4">
+      <div className="section pt-5">
         <h4 className="section-title">SOCIAL MEDIAS</h4>
         <div className="socials">
           <a href="https://www.facebook.com/ICpEP.seTUPV" target="_blank" rel="noreferrer">

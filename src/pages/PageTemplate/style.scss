@@ -34,8 +34,42 @@
 }
 
 .page-footer {
-  margin: 5em 0 1em 0;
-  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 3em 6em;
+  background-color: #666;
+
+  .page-footer-brand {
+    .page-footer-logos {
+      display: flex;
+      align-items: center;
+      max-width: 558px;
+      margin-bottom: 16px;
+      font-size: 1.25em;
+      color: $color-primary;
+    }
+
+    .page-footer-copy {
+      font-size: .8em;
+      color: #afafaf;
+    }
+  }
+
+  .page-footer-section {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: .9em;
+
+    h5 {
+      font-size: 1.25em;
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+    }
+  }
 }
 
 .section {
