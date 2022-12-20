@@ -61,7 +61,7 @@ class About extends React.Component<AboutProps, AboutState> {
 
     for (let i = 0; i < this.state.development.length; i++) {
       const dev = this.state.development[i];
-      development.push(<Officer officer={dev} label="Role" key={i} />);
+      development.push(<Officer officer={dev} key={i} />);
     }
 
     return (

@@ -1,6 +1,16 @@
 
 .officer {
   display: flex;
-  width: 400px;
+  width: 350px;
   margin-top: 48px;
+
+  .officer-details {
+    flex: 1;
+
+    h6 {
+      margin-bottom: .5em;
+      padding-bottom: .25em;
+      border-bottom: 2.5px solid #fff;
+    }
+  }
 }
