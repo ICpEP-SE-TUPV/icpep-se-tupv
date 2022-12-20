@@ -10,10 +10,18 @@
   a { text-decoration: underline; }
 }
 
+.socials {
+  a { margin: 0 12px; }
+}
+
 @media (min-width: map.get($grid-breakpoints, "sm")) {
   .form-contact { 
     padding: 0 1em;
     max-width: 350px;
+  }
+
+  .socials {
+    a { margin: 0 24px; }
   }
 }
 
