@@ -6,7 +6,6 @@ import axios from 'axios';
 import PageTemplate from '../PageTemplate';
 import Article from '../../components/Article';
 import Carousel from '../../components/Carousel';
-import Socials from '../../components/Socials';
 import { ReactComponent as ArrowRightIcon } from '../../assets/arrow-right.svg';
 import { IArticle } from '../../types';
 import './style.scss';
@@ -61,7 +60,7 @@ class Home extends React.Component<HomeProps, HomeState> {
             <Carousel images={banners} />
           </div>
 
-          <div className="section pt-4">
+          <div className="section articles-section pt-4">
             <h4 className="section-title">UPDATES</h4>
             <div className="articles">
               { articles }
@@ -74,8 +73,6 @@ class Home extends React.Component<HomeProps, HomeState> {
               </Link>
             </div>
           </div>
-
-          <Socials />
         </main>
       </PageTemplate>
     );

@@ -103,7 +103,7 @@ class Articles extends React.Component<ArticlesProps, ArticlesState> {
 
     return (
       <PageTemplate>
-        <main className="articles-main">
+        <main className="articles-main mb-5">
           <div className="articles-years">
             { this.state.years.map((year, i) => <div onClick={this.updateYear(year)} key={i}>{ year }</div>) }
           </div>

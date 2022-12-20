@@ -13,10 +13,15 @@
   cursor: pointer;
 
   .article-img {
-    height: 250px;
+    display: flex;
+    max-height: 250px;
     overflow: hidden;
+    border: 2px solid #000;
 
-    img { width: 300px; }
+    img {
+      width: 300px;
+      height: fit-content;
+    }
   }
 
   h6 { margin-top: 12px; }
