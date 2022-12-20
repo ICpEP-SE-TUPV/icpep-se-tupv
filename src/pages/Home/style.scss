@@ -9,6 +9,17 @@
   padding: 12px;
 }
 
+.articles-section {
+  margin-top: 6em;
+  background: linear-gradient(125deg, darken($color-primary, 10%) 0%, $color-primary 50%, lighten($color-primary, 10%) 100%);
+  color: #000;
+
+  .section-title {
+    border-width: 4px;
+    border-color: #000;
+  }
+}
+
 .socials {
   display: flex;
   justify-content: space-around;

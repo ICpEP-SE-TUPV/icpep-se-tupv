@@ -74,7 +74,7 @@
 .section-more {
   display: flex;
   justify-content: flex-end;
-  padding: 0 12px;
+  padding: 0 12px 12px 12px;
 
   a {
     display: flex;
@@ -92,7 +92,7 @@
 }
 
 @media (min-width: map.get($grid-breakpoints, "md")) {
-  .section-more { padding: 0 48px; }
+  .section-more { padding: 0 48px 12px 48px; }
 }
 
 @media (min-width: map.get($grid-breakpoints, "lg")) {
@@ -105,5 +105,5 @@
 
   .section-title { max-width: 450px; }
   .section-title-long { max-width: 600px; }
-  .section-more { padding: 0 256px; }
+  .section-more { padding: 0 256px 12px 256px; }
 }

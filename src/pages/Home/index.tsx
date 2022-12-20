@@ -61,7 +61,7 @@ class Home extends React.Component<HomeProps, HomeState> {
             <Carousel images={banners} />
           </div>
 
-          <div className="section pt-4">
+          <div className="section articles-section pt-4">
             <h4 className="section-title">UPDATES</h4>
             <div className="articles">
               { articles }
