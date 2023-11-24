@@ -1,5 +1,7 @@
-<h1><img style="width: 50px" src="assets/img/favicon.png"> INSTITUE OF COMPUTER ENGINEERING OF THE PHILIPPINES - STUDENT EDITION TUPV</h1>
-
+<div style="display: inline-flex;">
+  <img style="width: 50px" src="assets/img/favicon.png">
+  <h1 style="font-size: 100px">INSTITUE OF COMPUTER ENGINEERING OF THE PHILIPPINES - STUDENT EDITION TUPV</h1>
+</div>
 
 <h1>What is our dream as CpE - TUPVians?
 <h2>We dream to excel in all situations and give our all. To show that we can decode success, format lives, and develop dreams. We will be the change that our society needs.</h2>
