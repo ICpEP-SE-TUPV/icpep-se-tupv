@@ -1,4 +1,4 @@
-<div style="display: inline-flex;">
+<div style="display: flex; width: 100%">
   <img style="width: 50px" src="assets/img/favicon.png">
   <h1 style="font-size: 100px">INSTITUE OF COMPUTER ENGINEERING OF THE PHILIPPINES - STUDENT EDITION TUPV</h1>
 </div>
