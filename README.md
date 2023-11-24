@@ -1,1 +1,4 @@
 <h1>INSTITUE OF COMPUTER ENGINEERING OF THE PHILIPPINES - STUDENT EDITION TUPV</h1>
+
+
+<h2>The Institute of Computer Engineers of the Philippines (ICPEP) is a non-profit professional organization that provides its members with opportunities for continuing education, skill enhancement, and professional development in the field of computer engineering. ICPEP is committed to advancing the science and technology of computer engineering through its participation in research and development activities, the dissemination of technical knowledge, and the promotion of ethical engineering practices. Members of ICPEP are certified as Professional Computer Engineers in the Philippines, and the organization serves as a voice in the global computer engineering community, advancing the cause of computer engineering in the Philippines and beyond.</h2>
