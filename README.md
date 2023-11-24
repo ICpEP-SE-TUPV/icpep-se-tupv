@@ -1,7 +1,4 @@
-<div style="display: inline-flex;">
-  <img style="width: 50px" src="assets/img/favicon.png">
-  <h1>INSTITUE OF COMPUTER ENGINEERING OF THE PHILIPPINES - STUDENT EDITION TUPV</h1>
-</div>
+<h1><img style="width: 50px" src="assets/img/favicon.png"> INSTITUE OF COMPUTER ENGINEERING OF THE PHILIPPINES - STUDENT EDITION TUPV</h1>
 
 
 <h1>What is our dream as CpE - TUPVians?
