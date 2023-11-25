@@ -1,8 +1,8 @@
-(assets/img/favicon.png")  
+![ICpEP.SE LOGO](assets/img/favicon.png)  
 
 # ICpEP - SE.TUPV Website
 
->This is the source code for the ICpEP - SE.TUPV Website. This website is solely for marketing and introducing what ICpEP.SE-TUPV do. The website is composed of HTML, CSS, and >JavaScript in the making. It was a challenge at first on how to do the color scheme but the developers followed the contrast of the logo of ICpEP.SE-TUPV.  
+This is the source code for the ICpEP - SE.TUPV Website. This website is solely for marketing and introducing what ICpEP.SE-TUPV do. The website is composed of HTML, CSS, and JavaScript in the making. It was a challenge at first on how to do the color scheme but the developers followed the contrast of the logo of ICpEP.SE-TUPV.  
 
 ### FRONT END DEVELOPERS
 #### Project Manager : Lanz Joseph T. Villanueva
