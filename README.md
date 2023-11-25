@@ -1,4 +1,4 @@
-![ICpEP.SE LOGO](assets/img/favicon.png)  
+<img src="assets/img/favicon.png" width="100"> 
 
 # ICpEP - SE.TUPV Website
 
