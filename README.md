@@ -6,7 +6,7 @@ This is the source code for the ICpEP - SE.TUPV Website. This website is solely 
 
 ### FRONT END DEVELOPERS
 #### Project Manager : Lanz Joseph T. Villanueva
-### UI/UX Designer : Neil Francis A. Yangyang
+#### UI/UX Designer : Neil Francis A. Yangyang
 #### Project Architect : Nicholas Gabriel C. Locson
 #### QA and Testing Specialist : Ariel G. Malijoc Jr.
 
