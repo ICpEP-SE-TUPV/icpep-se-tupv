@@ -1,4 +1,4 @@
-<img src="assets/img/favicon.png" width="100"> 
+<center><img src="assets/img/favicon.png" width="100"></center>
 
 # ICpEP - SE.TUPV Website
 
