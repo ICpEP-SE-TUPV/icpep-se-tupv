@@ -902,6 +902,83 @@ section {
 }
 
 /*--------------------------------------------------------------
+# Current Officers
+--------------------------------------------------------------*/
+.officers {
+  background-color: #0e0e0e;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.officers .section-title, .officers h2 {
+  color: #fff;
+}
+.officers .member {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.officers .president {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.officers .president .member{
+  margin-bottom: 20px;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.officers .president .member img{
+  max-height: 150px;
+  border-radius: 10em;
+}
+
+.officers .member img{
+  max-height: 150px;;
+  border-radius: 10em;
+}
+
+.officers .vicepres {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.officers .vicepres .vps {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.officers .member .member-info h4 {
+  font-weight: 700;
+  margin-bottom: 5px;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.officers .member .member-info span {
+  display: block;
+  font-size: 13px;
+  font-weight: 400;
+  color: #e5b336;
+}
+
+.officers .member .member-info p {
+  font-style: italic;
+  font-size: 14px;
+  line-height: 26px;
+  color: #656262;
+}
+
+.officers .member:hover .social {
+  opacity: 1;
+}
+
+/*--------------------------------------------------------------
 # F.A.Q
 --------------------------------------------------------------*/
 .faq, .faq h2{
