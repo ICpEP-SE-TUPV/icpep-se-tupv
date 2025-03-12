@@ -1,9 +1,9 @@
-# ICpEP - SE.TUPV Website 
+# Institue of Computer Engineers of the Philippines Student Edition - Technological University of the Philippines Visayas Website 
 <p align="center">
   <img src="assets/img/favicon.png" width="100">
 </p>
 
-This is the source code for the ICpEP - SE.TUPV Website. This website is solely for marketing and introducing what ICpEP.SE-TUPV do. The website is composed of HTML, CSS, and JavaScript in the making. It was a challenge at first on how to do the color scheme but the developers followed the contrast of the logo of ICpEP.SE-TUPV.  
+This is the source code for the $${\color{#f6c23e}ICpEP \space - \space SE.TUPV}$$ Website. This website is solely for marketing and introducing what $${\color{#f6c23e}ICpEP \space - \space SE.TUPV}$$ do. The website is composed of $${\color{#e34c26}HTML}$$, $${\color{#264de4}CSS}$$, and $${\color{#f0db4f}JavaScript}$$ in the making. It was a challenge at first on how to do the color scheme but the developers followed the contrast of the logo of $${\color{#f6c23e}ICpEP \space - \space SE.TUPV}$$.  
 
 ### FRONT END DEVELOPERS
 #### Project Manager : Lanz Joseph T. Villanueva
