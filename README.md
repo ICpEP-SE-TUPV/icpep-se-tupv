@@ -1,4 +1,5 @@
-# $${\color{#e5b336}Institue \space of \space Computer \space Engineers \space of \space the \space Philippines \space Student \space Edition}$$ -  {\color{#c51e3a}Technological \space University \space of \space the \space Philippines \space Visayas}$$  Website
+# $${\color{#e5b336}Institue \space of \space Computer \space Engineers \space of \space the \space Philippines \space Student \space Edition}$$ -  
+$${\color{#c51e3a}Technological \space University \space of \space the \space Philippines \space Visayas}$$  Website
 <p align="center">
   <img src="assets/img/favicon.png" width="100">
 </p>
