@@ -7,7 +7,10 @@ This is the source code for the $${\color{#e5b336}ICpEP \space - \space SE.TUPV}
 
 <h2 align="center">Website Developers</h2>
 
-<img src="assets/img/team/team-1.jpg" width="100" alt="">
-<img src="assets/img/team/team-2.jpg" width="100" alt="">
-<img src="assets/img/team/team-3.jpg" width="100" alt="">
-<img src="assets/img/team/team-4.jpg" width="100" alt="">
+<div>
+  <img src="assets/img/team/team-1.jpg" width="100" alt="">
+  <img src="assets/img/team/team-2.jpg" width="100" alt="">
+  <img src="assets/img/team/team-3.jpg" width="100" alt="">
+  <img src="assets/img/team/team-4.jpg" width="100" alt="">  
+</div>
+
