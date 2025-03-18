@@ -14,14 +14,14 @@ This is the source code for the $${\color{#e5b336}ICpEP \space - \space SE.TUPV}
   <img src="assets/img/team/team-4.jpg" width="200" alt="">
 </div>
 
-<div align="left" width="100%">
+<div>
   <p>Lanz Joseph Villanueva</p>
   <p>Neil Francis Yangyang</p>
   <p>Nicholas Gabriel Locson</p>
   <p>Ariel Malihoc Jr.</p>
 </div>
 
-<div align="left">
+<div>
   <p>Project Manager</p>
   <p>UI/UX Designer</p>
   <p>Project Architect</p>
