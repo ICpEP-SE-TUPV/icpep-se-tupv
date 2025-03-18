@@ -7,8 +7,8 @@ This is the source code for the $${\color{#e5b336}ICpEP \space - \space SE.TUPV}
 
 <h2 align="center">Website Developers</h2>
 <p align="left">
-• Lanz Joseph Villanueva - Project Manager
-• Neil Francis Yangyang - UI/UX Designer
-• Nicholas Gabriel Locson - Project Architect
-• Ariel Malihoc Jr. - QA and Testing Specialist
+Lanz Joseph Villanueva - Project Manager
+Neil Francis Yangyang - UI/UX Designer
+Nicholas Gabriel Locson - Project Architect
+Ariel Malihoc Jr. - QA and Testing Specialist
 </p>
