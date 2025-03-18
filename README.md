@@ -8,9 +8,21 @@ This is the source code for the $${\color{#e5b336}ICpEP \space - \space SE.TUPV}
 <h2 align="center">Website Developers</h2>
 
 <div align="center" justify-content="space-evenly">
-  <img src="assets/img/team/team-1.jpg" width="200" alt="">
-  <img src="assets/img/team/team-2.jpg" width="200" alt="">
-  <img src="assets/img/team/team-3.jpg" width="200" alt="">
-  <img src="assets/img/team/team-4.jpg" width="200" alt="">  
+  <div>
+    <img src="assets/img/team/team-1.jpg" width="200" alt="">
+    <p>Lanz Joseph Villanueva</p>
+  </div>
+  <div>
+    <img src="assets/img/team/team-2.jpg" width="200" alt="">
+    <p>Neil Francis Yangyang</p>
+  </div>
+  <div>
+    <img src="assets/img/team/team-3.jpg" width="200" alt="">
+    <p>Nicholas Gabriel Locson</p>
+  </div>
+  <div>
+    <img src="assets/img/team/team-4.jpg" width="200" alt="">
+    <p>Ariel Malihoc Jr.</p>
+  </div>
 </div>
 
