@@ -7,14 +7,26 @@ This is the source code for the $${\color{#e5b336}ICpEP \space - \space SE.TUPV}
 
 <h2 align="center">Website Developers</h2>
 
-<div align="center">
-  <img src="assets/img/team/team-1.jpg" width="200" alt="">
-  <p>Lanz Joseph Villanueva</p>
-  <img src="assets/img/team/team-2.jpg" width="200" alt="">
-  <p>Neil Francis Yangyang</p>
-  <img src="assets/img/team/team-3.jpg" width="200" alt="">
-  <p>Nicholas Gabriel Locson</p>
-  <img src="assets/img/team/team-4.jpg" width="200" alt="">
-  <p>Ariel Malihoc Jr.</p>
-</div>
+![](assets/img/team/team-1.jpg)
 
+#### Lanz Joseph Villanueva
+
+Project Manager
+
+![](assets/img/team/team-2.jpg)
+
+#### Neil Francis Yangyang
+
+UI/UX Designer
+
+![](assets/img/team/team-3.jpg)
+
+#### Nicholas Gabriel Locson
+
+Project Architect
+
+![](assets/img/team/team-4.jpg)
+
+#### Ariel Malihoc Jr.
+
+QA and Testing Specialist
