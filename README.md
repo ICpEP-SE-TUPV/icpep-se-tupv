@@ -5,16 +5,15 @@
 
 This is the source code for the $${\color{#e5b336}ICpEP \space - \space SE.TUPV}$$ Website. This website is solely for marketing and introducing what $${\color{#e5b336}ICpEP \space - \space SE.TUPV}$$ do. The website is composed of $${\color{#e34c26}HTML}$$, $${\color{#264de4}CSS}$$, and $${\color{#f0db4f}JavaScript}$$ in the making. It was a challenge at first on how to do the color scheme but the developers followed the contrast of the logo of $${\color{#e5b336}ICpEP \space - \space SE.TUPV}$$.  
 
-    <section id="team" class="team section-bg">
-      <div class="container">
-
-        <div class="section-title">
-          <h2 data-aos="fade-up">Website Developers</h2>
-          <p data-aos="fade-up">The developers of ICpEP-TUPV are a dedicated group of professionals who are committed to creating a unique and innovative learning experience as students. They bring a range of skills and experiences to the table, like expertise in computer science, engineering, and project management.</p>
-        </div>
-
-        <div class="row">
-
+<section id="team" class="team section-bg">
+  <div class="container">
+    <div class="section-title">
+      <h2 data-aos="fade-up">Website Developers</h2>
+          <p data-aos="fade-up">The developers of ICpEP-TUPV are a dedicated group of professionals who are committed to creating a unique and innovative learning experience as students. They bring a range of 
+            skills and experiences to the table, like expertise in computer science, engineering, and project management.
+          </p>
+    </div>
+    <div class="row">
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up">
             <div class="member">
               <div class="member-img">
@@ -26,7 +25,6 @@ This is the source code for the $${\color{#e5b336}ICpEP \space - \space SE.TUPV}
               </div>
             </div>
           </div>
-
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
             <div class="member">
               <div class="member-img">
@@ -38,7 +36,6 @@ This is the source code for the $${\color{#e5b336}ICpEP \space - \space SE.TUPV}
               </div>
             </div>
           </div>
-
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
             <div class="member">
               <div class="member-img">
@@ -50,7 +47,6 @@ This is the source code for the $${\color{#e5b336}ICpEP \space - \space SE.TUPV}
               </div>
             </div>
           </div>
-
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
             <div class="member">
               <div class="member-img">
@@ -62,8 +58,6 @@ This is the source code for the $${\color{#e5b336}ICpEP \space - \space SE.TUPV}
               </div>
             </div>
           </div>
-
         </div>
-
       </div>
     </section>
