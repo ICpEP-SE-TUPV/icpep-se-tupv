@@ -1,14 +1,35 @@
-## $${\color{#e5b336}Institue \space of \space Computer \space Engineers \space of \space the \space Philippines \space Student \space Edition}$$ -  $${\color{#c51e3a}Technological \space University \space of \space the \space Philippines \space Visayas}$$  Website
-<p align="center">
-  <img src="assets/img/favicon.png" width="100">
-</p>
+# ICpEP.SE TUPV Website
 
-This is the source code for the $${\color{#e5b336}ICpEP \space - \space SE.TUPV}$$ Website. This website is solely for marketing and introducing what $${\color{#e5b336}ICpEP \space - \space SE.TUPV}$$ do. The website is composed of $${\color{#e34c26}HTML}$$, $${\color{#264de4}CSS}$$, and $${\color{#f0db4f}JavaScript}$$ in the making. It was a challenge at first on how to do the color scheme but the developers followed the contrast of the logo of $${\color{#e5b336}ICpEP \space - \space SE.TUPV}$$.  
+## Table of Contents
+- [Overview](#overview)
+- [Mission and Vision](#mission-and-vision)
+- [Testimonials](#testimonials)
+- [Development Team](#development-team)
+- [Contact Information](#contact-information)
 
-<h2 align="center">Website Developers</h2>
-<p align="left">
-• Lanz Joseph Villanueva - Project Manager<br>
-• Neil Francis Yangyang - UI/UX Designer<br>
-• Nicholas Gabriel Locson - Project Architect<br>
-• Ariel Malihoc Jr. - QA and Testing Specialist<br>
-</p>
+## Overview
+The **Institute of Computer Engineers of the Philippines Student Edition - Technological University of the Philippines Visayas (ICpEP.SE TUPV)** is dedicated to bridging the gap between academia and industry for Computer Engineering students. The organization's website serves as a platform to showcase its mission, vision, values, and activities.
+
+## Mission and Vision
+
+**Mission:**  
+ICpEP.SE TUPV is committed to empowering its members by fostering their interests, welfare, and ideals, developing a strong and harmonious community, and professionalizing the skills of its officers and members for global competitiveness and national progression.
+
+**Vision:**  
+ICpEP.SE TUPV envisions itself as the foundation of world-class computer engineers and a motivator of students' interests towards excellence in Computer Engineering as their field of specialization.
+
+## Development Team
+The ICpEP-TUPV website was developed by a dedicated team of professionals:
+
+- **Lanz Joseph Villanueva** – Project Manager
+- **Neil Francis Yangyang** – UI/UX Designer
+- **Nicholas Gabriel Locson** – Project Architect
+- **Ariel Malihoc Jr.** – QA and Testing Specialist
+
+Their combined expertise in computer science, engineering, and project management contributed to creating an innovative and user-friendly platform.
+
+## Contact Information
+For more information or inquiries, please visit the [ICpEP.SE TUPV website](https://icpep-se-tupv.pages.dev/) or reach out through the contact details provided on the site.
+
+---
+This README provides an overview of the ICpEP.SE TUPV website, its mission, vision, testimonials, development team, and contact information.
