@@ -923,6 +923,12 @@ section {
   justify-content: space-evenly;
 }
 
+.officers .pros {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
 .officers .member .member-info h4 {
   font-weight: 700;
   margin-bottom: 5px;
